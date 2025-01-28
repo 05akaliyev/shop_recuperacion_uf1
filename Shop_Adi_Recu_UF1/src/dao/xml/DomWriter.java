@@ -55,7 +55,7 @@ private Document document;
 
 	        Element price = document.createElement("price");
 	        price.setAttribute("currency", "€");  
-	        price.setTextContent(String.format("%.2f", producto.getWholesalerPrice())); 
+	        price.setTextContent(String.format("%.2f", producto.getWholesalerPrice().getValue()));
 	        product.appendChild(price);
 
 	        Element stock = document.createElement("stock");

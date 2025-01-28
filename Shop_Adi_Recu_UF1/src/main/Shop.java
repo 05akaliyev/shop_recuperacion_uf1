@@ -35,7 +35,7 @@ public class Shop {
         cash = new Amount(0.0);
         inventory = new ArrayList<>();
         sales = new ArrayList<>();
-        dao = new DaoImplJaxb();
+        dao = new DaoImplXml();
     }
 	public static void main(String[] args){
 		Shop shop = new Shop();
